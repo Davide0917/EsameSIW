@@ -29,6 +29,8 @@
 
 <link type="text/css" rel="stylesheet" href="css/customBootstrap.css" />
 
+<link rel="icon" href="./img/logo5.png" type="image/png" />
+
 <title>ViewMaps</title>
 </head>
 <body >

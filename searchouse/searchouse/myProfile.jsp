@@ -37,6 +37,7 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <link type="text/css" rel="stylesheet" href="css/myprofile.css" />
+<link rel="icon" href="./img/logo5.png" type="image/png" />
 <title>Searchouse: My Profile</title>
 </head>
 <body>

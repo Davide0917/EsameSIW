@@ -30,7 +30,7 @@
 <script type="text/javascript" src="js/ad.js"></script>
 
 <link type="text/css" rel="stylesheet" href="css/customBootstrap.css" />
-
+<link rel="icon" href="./img/logo5.png" type="image/png" />
 </head>
 <body onload="codeAddress()">
 	<%

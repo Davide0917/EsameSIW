@@ -13,6 +13,7 @@
 <script type="text/javascript" src="js/calculateAddress.js"></script>
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./img/logo5.png" type="image/png" />
 <title>Searchouse: New Ad</title>
 </head>
 <body>
