@@ -111,7 +111,7 @@
 				</div>
 				<div class="form-group">
 					<input class="input" type="text" name="phone" value="<%=phone%>"
-						placeholder="Enter Phone" />
+						placeholder="Enter Phone (*)" required/>
 				</div>
 				<div class="form-group">
 					<input class="input" style="float:left;width: 100%"type="password" name="password"
@@ -124,6 +124,7 @@
 				<button id="btn" style="margin-top: 10%" class="primary-btn" disabled>Join Us!</button>
 				<a href="logInForm.jsp" style="margin-left: 1%">Already
 					registered? Log in!</a>
+				<div class="container-mf mt-3">(*) Required fields</div>
 			</form>
 		</div>
 

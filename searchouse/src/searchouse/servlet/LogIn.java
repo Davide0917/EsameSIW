@@ -99,7 +99,8 @@ public class LogIn extends HttpServlet {
 				System.out.println("BENVENUTO");
 				AppUtil.removeLoginedUser(session);
 				AppUtil.storeLoginedUser(session, account);
-				response.sendRedirect("/searchouse/index");
+				//response.sendRedirect("/searchouse/index");
+				AppUtil.forward(request, response, "/index.jsp");
 			} else {
 				error.setMessage("Username o password non validi");
 				error.setComeBack("/searchouse/login");

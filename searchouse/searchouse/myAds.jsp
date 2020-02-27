@@ -67,6 +67,9 @@
 					// VA FORMATTATO OPPORTUNAMENTE CON I CSS
 					for (AdsBean ad : ads) {
 						String path;
+//						Stampiamo solo i primi 20 caratteri della descrizione
+						String description = ad.getDescription().substring(0, (ad.getDescription().length()/2))+"...";
+
 						if (!ad.getImagesName().isEmpty())
 							path = "./img/" + ad.getImagesName().get(0);
 						else
@@ -114,7 +117,7 @@
 							<%=ad.getAddress()%>
 						</div>
 						<div class="descrizione__truncate">
-							<%=ad.getDescription()%>
+							<%=description%>
 						</div>
 					</div>
 				</div>

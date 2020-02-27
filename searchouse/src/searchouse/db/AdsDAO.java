@@ -25,10 +25,10 @@ public class AdsDAO implements DAO {
 			conn.setAutoCommit(false);
 			stmt = conn.createStatement();
 
-			String insertAd = "INSERT INTO ads (id,id_account,title,address,provincia,description,dimension,type,price,lan,lng,date_ins)";
+			String insertAd = "INSERT INTO ads (id,id_account,title,address,provincia,description,dimension,type,price,lan,lng,contact,date_ins)";
 			insertAd += " VALUES ('" + ad.getId() + "','" + ad.getId_account() + "','" + ad.getTitle() + "','"
 					+ ad.getAddress() + "','" + ad.getProvincia() + "','"+ ad.getDescription() + "','" + ad.getDimension()+ "','" + ad.getType()
-					+ "','" + ad.getPrice()+ "','" + ad.getX() + "','" + ad.getY() + "'," + " SYSDATE())";
+					+ "','" + ad.getPrice()+ "','" + ad.getX() + "','" + ad.getY() + "','" + ad.getContact() + "'," + " SYSDATE())";
 			System.out.println("INSERT QUERY:" + insertAd);
 			stmt.executeUpdate(insertAd);
 			conn.commit();
@@ -186,6 +186,7 @@ public class AdsDAO implements DAO {
 				int price = Integer.parseInt(adsList.getString("price"));
 				float x = Float.parseFloat(adsList.getString("lan"));
 				float y = Float.parseFloat(adsList.getString("lng"));
+				String contact = adsList.getString("contact");
 
 				AdsBean ad = new AdsBean();
 				UUID id = UUID.fromString(id_ad);
@@ -200,6 +201,7 @@ public class AdsDAO implements DAO {
 				ad.setImagesName(getFilePath(id));
 				ad.setX(x);
 				ad.setY(y);
+				ad.setContact(contact);
 				ads.add(ad);
 			}
 			return ads;
@@ -263,6 +265,7 @@ public class AdsDAO implements DAO {
 				int price = Integer.parseInt(adsList.getString("price"));
 				float x = Float.parseFloat(adsList.getString("lan"));
 				float y = Float.parseFloat(adsList.getString("lng"));
+				String contact = adsList.getString("contact");
 				UUID id = UUID.fromString(id_ad);
 				
 				AdsBean ad = new AdsBean();
@@ -278,6 +281,7 @@ public class AdsDAO implements DAO {
 				ad.setImagesName(getFilePath(id));
 				ad.setX(x);
 				ad.setY(y);
+				ad.setContact(contact);
 				ads.add(ad);
 			}
 			return ads;
@@ -353,6 +357,7 @@ public class AdsDAO implements DAO {
 				String price = adsList.getString("price");
 				String x = adsList.getString("lan");
 				String y = adsList.getString("lng");
+				String contact = adsList.getString("contact");
 
 				AdsBean ad = new AdsBean();
 				ad.setId(id);
@@ -361,6 +366,7 @@ public class AdsDAO implements DAO {
 				ad.setAddress(address);
 				ad.setProvincia(provincia);
 				ad.setDescription(description);
+				ad.setContact(contact);
 				if(dimension!="")
 					ad.setDimension(Integer.parseInt(dimension));
 				ad.setType(type);
