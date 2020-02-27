@@ -304,7 +304,6 @@ public class AdsDAO implements DAO {
 		    double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 		    double distance = R * c ; // convert to meters
 
-		    System.out.println("LA DISTANZA DAL PORCO DI DIO ALLA MADONNA è ----> "+(int)distance) ;
 		    return (int)distance;
 	}
 	

@@ -44,6 +44,8 @@
 	</div>
 	<div style="clear:both;"></div>
 	<%@ include file="footer.jsp"%>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	
 </body>
 <%if(err!=null){ 

@@ -402,7 +402,7 @@
 						var button = document.createElement("input");
 						 button.value = "Calcola Coordinate";
 						 button.type = "button";
-						 button.id = "CalcolaCoo"
+						 button.id = "CalcolaCoo";
 						 button.attributes = "required";
 						 document.getElementById("input").required = true;
 						 button.required = true;

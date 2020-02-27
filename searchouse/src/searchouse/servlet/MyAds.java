@@ -119,8 +119,6 @@ public class MyAds extends HttpServlet {
 		
 		UUID id = UUID.fromString(request.getParameter("Delete").trim());
 		
-		System.out.println("CIAONE SONO NEL DOPOST STAMPA ID ANNUNCIO"+ id);
-		
 		AdsDAO db = new AdsDAO();
 		AdsBean adDelete = new AdsBean();
 		adDelete.setId(id);
