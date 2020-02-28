@@ -20,6 +20,7 @@ public class AdsBean implements Bean, java.io.Serializable {
 	private ArrayList<String> imagesName;
 	private float x;
 	private float y;
+	private String contact;
 	
 	public float getX() {
 		return x;
@@ -124,5 +125,13 @@ public class AdsBean implements Bean, java.io.Serializable {
 			return true;
 		}
 		return false;
+	}
+
+	public String getContact() {
+		return contact;
+	}
+
+	public void setContact(String contact) {
+		this.contact = contact;
 	}
 }

@@ -124,6 +124,8 @@
 			<div class="container-md mt-3 border" style="opacity: .7;"><%=currentAd.getPrice() + " EUR"%></div>
 			<div class="container-mf mt-3">Località</div>
 			<div class="container-mf mt-3 border" id= "address" style="opacity: .7;"><%=currentAd.getAddress()%>, <%=currentAd.getProvincia()%></div>
+			<div class="container-mf mt-3">Contatto</div>
+			<div class="container-mf mt-3 border" style="opacity: .7;"><%=currentAd.getContact()%></div>
 		</div>
 		<div style="margin-left: 55%; margin-top: 5%">
 			<script>

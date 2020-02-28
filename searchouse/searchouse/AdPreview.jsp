@@ -64,7 +64,7 @@
 					String path;
 					
 					//	Stampiamo solo i primi 20 caratteri della descrizione
-					String description = ad.getDescription().substring(0, 20)+"...";
+					String description = ad.getDescription().substring(0, (ad.getDescription().length()/2))+"...";
 					
 					if (!ad.getImagesName().isEmpty())
 						path = "./img/" + ad.getImagesName().get(0);

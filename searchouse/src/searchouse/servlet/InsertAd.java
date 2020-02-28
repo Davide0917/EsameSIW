@@ -162,6 +162,7 @@ public class InsertAd extends HttpServlet {
 
 		ErrorBean err = new ErrorBean();
 		AccountBean user = (AccountBean) AppUtil.getLoginedUser(session);
+		ad.setContact(user.getPhone());
 
 		if (ad.isNull()) {
 			System.out.println("NULLI");
